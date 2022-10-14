@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>The Rancher Challenge</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Rancher Challenge" />
+    <meta name="description" content="Rancher Challenge home page" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="./gtag.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-346180-19');
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <script language="javascript">
+        function changeImage(name, newone) {
+            if (document.images) {
+                oldsrc = document[name].src;
+                document[name].src = oldsrc.substring(0, oldsrc.length - 5) + newone + '.jpg';
+            }
+        }
+
+        function preloadImages() {
+            var i;
+            prImages = new Array();
+            for (i = 0; i < preloadImages.arguments.length; i++) {
+                prImages[i] = new Image();
+                prImages[i].src = preloadImages.arguments[i];
+            }
+        }
+
+    </script>
+
+</head>
+
+<body
+    <center>
+        <center>
+            <font size="4">
+                <img src="images/logo.png" alt="Rancher Challenge" alt="Rancher Challenge" width="400" height="200">
+                <br><br><br>
+                <p>
+                    <font color="orange" />
+                    <b>SUSE Rancher 邀您挑战 1024 Decoding Challenge！<br> 预祝各位 1024 程序员节快乐！</b>
+                    <p />
+                    <p />
+                    <br><br>
+                    目前只有 <b>两个</b> 关卡。
+                    <br><br>
+                    <a href="begin.html" target="_blank">
+                        <font size="6" color="gold">点击这里接收挑战
+                    </a><br><br><br>
+                <table width="70%">
+                    <tr>
+                        <td align="center">
+                            <font color="orange"><b>
+                                    通关攻略：<br><br></b>
+                                <font color="gold">
+                                    SUSE Rancher 1024 Decoding Challenge 共设有 2 个关卡，<br>
+                                    成功破解第 1 个关卡后，您将收到通往下个关卡的线索。<br>
+                                    由于 2 个关卡是互相关联的，您必须先破解第 1 关才有办法进入第 2 关哦！
+
+                        </td>
+                    </tr>
+                </table>
+                <br><br><br><br><br>
+                <font size="-1" color="gold">
+                    <br>
+                    游戏灵感来源于: <a href="http://www.pythonchallenge.com/" />Python Challenge</a>
+                    <br>
+</body>
+
+</html>
