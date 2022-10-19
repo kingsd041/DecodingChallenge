@@ -3,17 +3,17 @@
 ## 启动
 
 ```
+cd /opt/
 git clone xxx.git
-cd xxx
 ```
 
 ```
 docker run --name rancher1024 \
-    -v /opt/nginx/nginx.conf:/etc/nginx/nginx.conf:ro \
-    -v /opt/nginx/conf.d:/etc/nginx/conf.d  \
-    -v /opt/nginx/log:/var/log/nginx  \
-    -v /opt/nginx/html:/usr/share/nginx/html \
-    -v /opt/:/www/  \
-    -p 8001:80 \
+    -v /opt/DecodingChallenge/nginx-files/nginx.conf:/etc/nginx/nginx.conf:ro \
+    -v /opt/DecodingChallenge/nginx-files/conf.d:/etc/nginx/conf.d \
+    -v /opt/DecodingChallenge/html-files:/usr/share/nginx/html \
+    -v /opt/nginx/ssl:/etc/nginx/ssl \
+    -p 80:80 \
+    -p 443:443 \
     -d nginx
 ```
